@@ -21,7 +21,7 @@ h2{
 }
 .tab{
   cursor: pointer;
-  padding:10px 20px;
+  padding:3px 5px;
   margin:5px 2px 5px 2px;
   background-color:#008753;
   display:inline-block;
@@ -262,4 +262,6 @@ h2{
 	
 	
 }
+	.tab{
+  padding:10px 20px;
 }
