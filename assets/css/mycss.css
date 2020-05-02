@@ -1,0 +1,265 @@
+
+}@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+body{
+  background:#CDDC39;
+  font-family: 'Arimo', sans-serif;
+  
+}
+h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+	
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:5px 2px 5px 2px;
+  background-color:#008753;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:100px;
+  width:100%;
+  
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel,
+#six:checked ~ .panels #six-panel,
+#seven:checked ~ .panels #seven-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab,
+#seven:checked ~ .tabs #seven-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #008753;
+}
+
+.category{
+	padding: 40px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+}
+.foodstuffs{
+	background-image: url("../img/foodstuffs.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid green;
+	height: 120px;
+	width: 99%;
+	margin-bottom: 40px;
+	display: inline-block;
+	position: relative;
+	
+}
+
+.fastfood{
+	background-image: url("../img/fastfood.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid green;
+	height: 120px;
+	width: 99%;
+	display: inline-block;
+	position: relative;
+	
+}
+.ctxt{
+	
+	background-color: white;
+	z-index: 2;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding: 10px;
+	transition: all 0.3s linear;
+}
+.ctxt:hover{
+	color: black;
+	background-color: #008753;
+}
+.foodCont{
+	position: relative;
+	
+}
+.foodlabel{
+	color:#008753;
+	width: 100%;
+	height: auto;
+	
+	
+	margin-bottom: -30px;
+	padding: 6px;
+	transition: all 0.3s linear;
+}
+.foodlabel:hover{
+	color: black;
+	background-color: white;
+}
+.sticky-top{
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	z-index: 100;
+	background-color: green;
+}
+.whitecont{
+	 background:url( "../img/bg22.png"),left top, right top, from(#B7C217), color-stop(60%, #46C944), to(#798007));
+  background:url("../img/bg22.png"),linear-gradient(to right, #B7C217 0%, #46C944 60%, #798007 100%); 
+	color: white;
+	width: 100%; 
+	height: auto;
+	
+	z-index: 50; 
+	box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+.panels{
+	margin-top: 100px;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background:#f09d51;
+  color: var(--mainBlack);
+  border: 1px solid #f09d51;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: #f09d51;
+}
+.togg{
+	
+}
+
+@media screen and (min-width: 400px) {
+	.panels{
+	margin-top: 20px;
+}
+	
+	
+}
+
+
+@media screen and (min-width: 600px) {
+	.panels{
+	margin-top: 20px;
+}
+	
+	.whitecont{
+	
+	
+	height: auto;
+	 
+	 
+	box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+	
+	.category{
+		
+	display: flex;
+	font-size: 22px;
+}
+.foodstuffs{
+	flex:1;
+	height: 200px;
+	width: 80%;
+	margin-right: 40px;
+
+	
+}
+
+.fastfood{
+	flex:1;
+	height: 200px;
+	width: 80%;
+	
+	
+}
+	.ctxt{
+	
+	height: 60px;
+
+	
+	
+}
+}
+@media screen and (min-width: 1000px) {
+	.category{
+	
+	font-size: 30px;
+}
+.foodstuffs{
+	
+	height: 400px;
+	
+
+	
+}
+
+.fastfood{
+	height: 400px;
+	
+	
+	
+}
+	.ctxt{
+	
+	height: 60px;
+
+	
+	
+}
+}
