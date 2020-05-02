@@ -98,7 +98,7 @@ class UI {
         // add to DOM
         this.setCartValues(cart);
         this.addCartItem(cartItem);
-        this.showCart();
+//         this.showCart();
       });
     });
   }
