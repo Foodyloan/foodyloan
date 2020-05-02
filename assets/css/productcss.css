@@ -22,7 +22,9 @@ body {
 .nav-icon .fa-cart-plus{
 	font-size: 18px;
 }
-
+.cart2{
+		display: none;
+	}
 .cart1{
 	position: absolute;
 	right: 80px;
