@@ -180,9 +180,7 @@ h2{
   background: transparent;
   color: #f09d51;
 }
-footer nav{
-	text-align: center;
-}
+
 @media screen and (min-width: 400px) {
 	.panels{
 	margin-top: 20px;
