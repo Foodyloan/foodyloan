@@ -180,6 +180,9 @@ h2{
   background: transparent;
   color: #f09d51;
 }
+.welcome{
+	font-size:20px;
+}
 
 @media screen and (min-width: 400px) {
 	.panels{
@@ -194,7 +197,9 @@ h2{
 	.panels{
 	margin-top: 20px;
 }
-	
+	.welcome{
+	font-size:60px;
+}
 	.whitecont{
 	
 	
